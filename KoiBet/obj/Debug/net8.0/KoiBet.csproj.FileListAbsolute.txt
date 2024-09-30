@@ -1,0 +1,7 @@
+C:\Users\ADMIN\Desktop\Gitthub\KoiBet\obj\Debug\net8.0\KoiBet.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\Gitthub\KoiBet\obj\Debug\net8.0\KoiBet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Desktop\Gitthub\KoiBet\obj\Debug\net8.0\KoiBet.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Desktop\Gitthub\KoiBet\obj\Debug\net8.0\KoiBet.AssemblyInfo.cs
+C:\Users\ADMIN\Desktop\Gitthub\KoiBet\obj\Debug\net8.0\KoiBet.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\Gitthub\KoiBet\obj\Debug\net8.0\KoiBet.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ADMIN\Desktop\Gitthub\KoiBet\obj\Debug\net8.0\KoiBet.MvcApplicationPartsAssemblyInfo.cache
