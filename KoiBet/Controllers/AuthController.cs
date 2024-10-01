@@ -1,6 +1,5 @@
 ﻿using KoiBet.Data;
 using KoiBet.DTO;
-using KoiBet.Entites;
 using KoiBet.Entities;
 using KoiBet.Services;
 using Microsoft.AspNetCore.Authorization;
@@ -32,7 +31,7 @@ namespace KoiBet.Controllers
             // Kiểm tra username và password
             if (string.IsNullOrEmpty(loginDTO.Username))
             {
-                return BadRequest(new { message = "Username needs to be entered" });
+                return BadRequest(new { message = "Username needs to be fill" });
             }
             else if (string.IsNullOrEmpty(loginDTO.Password))
             {
@@ -49,6 +48,30 @@ namespace KoiBet.Controllers
 
             return BadRequest(new { message = "User login unsuccessful" });
         }
+
+        ////Login by Email
+        //[HttpPost("loginByEmail")]
+        //public async Task<IActionResult> LoginByEmail([FromBody] LoginDTO loginDTO)
+        //{
+        //    if (string.IsNullOrEmpty(loginDTO.Email))
+        //    {
+        //        return BadRequest(new {message = "Email need to be fill"});
+        //    }
+        //    else if (string.IsNullOrEmpty(loginDTO.Password))
+        //    {
+        //        return BadRequest(new { message = "Password need to be fill" }); //can be change to UI 
+        //    }
+           
+        //    Users loggedInEmail = await _authService.Login(loginDTO.Email, loginDTO.Password);
+
+        //    if (loggedInEmail != null) 
+        //    {
+        //        return Ok(loggedInEmail);
+        //    }
+
+        //    return BadRequest(new {message = "Account not exsit"})
+        //} //Cần dùng thì bung ra xài
+
 
         // POST: auth/register
         [AllowAnonymous]
@@ -67,6 +90,10 @@ namespace KoiBet.Controllers
             {
                 return BadRequest(new { message = "Email needs to be entered" });
             }
+            else if(registerDTO.Password != registerDTO.confirmPassword)
+            {
+                return BadRequest(new { message = "Password not match" });
+            }
 
             var userToRegister = new Users(registerDTO.Username, registerDTO.Password, registerDTO.Email);
             var registeredUser = await _authService.Register(userToRegister);
@@ -80,30 +107,32 @@ namespace KoiBet.Controllers
             return BadRequest(new { message = "User registration unsuccessful" });
         }
 
-        // GET: auth/test
-        [Authorize(Roles = "Everyone")]
-        [HttpGet("test")] // Thêm đường dẫn cho rõ ràng
-        public IActionResult Test()
-        {
-            string token = Request.Headers["Authorization"];
+        //// GET: auth/test
+        //[Authorize(Roles = "Everyone")]
+        //[HttpGet("test")] // Thêm đường dẫn cho rõ ràng
+        //public IActionResult Test()
+        //{
+        //    string token = Request.Headers["Authorization"];
 
-            if (token.StartsWith("Bearer"))
-            {
-                token = token.Substring("Bearer ".Length).Trim();
-            }
+        //    if (token.StartsWith("Bearer"))
+        //    {
+        //        token = token.Substring("Bearer ".Length).Trim();
+        //    }
 
-            var handler = new JwtSecurityTokenHandler();
-            JwtSecurityToken jwt = handler.ReadJwtToken(token);
+        //    var handler = new JwtSecurityTokenHandler();
+        //    JwtSecurityToken jwt = handler.ReadJwtToken(token);
 
-            var claims = new Dictionary<string, string>();
+        //    var claims = new Dictionary<string, string>();
 
-            foreach (var claim in jwt.Claims)
-            {
-                claims.Add(claim.Type, claim.Value);
-            }
+        //    foreach (var claim in jwt.Claims)
+        //    {
+        //        claims.Add(claim.Type, claim.Value);
+        //    }
 
-            return Ok(claims); // Trả về các claims trong token
-        }
+        //    return Ok(claims); // Trả về các claims trong token
+        //} --------------> Use to test 
+
+
 
         //// Phương thức đăng nhập bằng Google (chưa hoàn thiện)
         //[AllowAnonymous]
@@ -113,5 +142,10 @@ namespace KoiBet.Controllers
         //    // Logic để xác thực người dùng qua Google
         //    // Chưa hoàn thiện, cần định nghĩa GoogleLoginModel và logic xác thực
         //}
+    
+        
+    
+    
+    
     }
 }

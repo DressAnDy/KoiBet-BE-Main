@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KoiBet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f2d694d1d8837da4522862cdd9b2d45a308b46b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6ac0b1987640c5b37f3dd4768247f9a734f55dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("KoiBet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KoiBet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
