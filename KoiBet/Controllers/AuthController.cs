@@ -28,13 +28,15 @@ namespace KoiBet.Controllers
             if (string.IsNullOrEmpty(loginDTO.Username))
             {
                 return BadRequest(new { message = "Username needs to be filled" });
-            }
+            } //else if(string.IsNullOrEmpty(LoginDTO.e))
 
             // Kiểm tra password có hợp lệ không
             if (string.IsNullOrEmpty(loginDTO.Password))
             {
                 return BadRequest(new { message = "Password needs to be entered" });
             }
+
+           
 
             // Tìm người dùng trong cơ sở dữ liệu
             var user = await _context.Users
@@ -62,6 +64,11 @@ namespace KoiBet.Controllers
 
             return Ok(userResponse);
         }
+
+
+
+
+
 
     // POST: auth/register
     [AllowAnonymous]
