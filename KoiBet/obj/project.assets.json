@@ -4312,11 +4312,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\KoiBet.csproj",
+      "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\Back_End\\KoiBet-BE-Main\\KoiBet\\KoiBet.csproj",
       "projectName": "KoiBet",
-      "projectPath": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\KoiBet.csproj",
+      "projectPath": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\Back_End\\KoiBet-BE-Main\\KoiBet\\KoiBet.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\obj\\",
+      "outputPath": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\Back_End\\KoiBet-BE-Main\\KoiBet\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",

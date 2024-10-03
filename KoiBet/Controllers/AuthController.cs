@@ -1,5 +1,5 @@
 ﻿using KoiBet.Data;
-using KoiBet.DTO;
+using KoiBet.DTO.User;
 using KoiBet.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

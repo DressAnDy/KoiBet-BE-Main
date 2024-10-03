@@ -1,4 +1,4 @@
-﻿namespace KoiBet.DTO
+﻿namespace KoiBet.DTO.User
 {
     public class LoginDTO
     {

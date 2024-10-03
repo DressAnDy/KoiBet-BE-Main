@@ -45,6 +45,16 @@ public class Users
         Email = email;
     }
 
+    public Users(string user_id, string username, string password, string full_name, string email, string phone, string role_id, decimal balance, Roles role) : this(user_id, username, password)
+    {
+        this.full_name = full_name;
+        Email = email;
+        Phone = phone;
+        this.role_id = role_id;
+        Balance = balance;
+        Role = role;
+    }
+
     [JsonIgnore]
     public virtual Roles Role { get; set; }
 }

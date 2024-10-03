@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace KoiBet.DTO
+namespace KoiBet.DTO.User
 {
     public class RegisterDTO
     {
