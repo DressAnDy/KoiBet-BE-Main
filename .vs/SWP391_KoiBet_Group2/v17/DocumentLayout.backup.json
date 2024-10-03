@@ -3,28 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|c:\\users\\admin\\desktop\\gitthub\\koibet-be-main\\koibet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|solutionrelative:koibet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|c:\\users\\admin\\desktop\\gitthub\\koibet-be-main\\koibet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|solutionrelative:koibet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|c:\\users\\admin\\desktop\\gitthub\\koibet-be-main\\koibet\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|solutionrelative:koibet\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|c:\\users\\admin\\desktop\\gitthub\\koibet-be-main\\koibet\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|solutionrelative:koibet\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|c:\\users\\admin\\desktop\\gitthub\\koibet-be-main\\koibet\\entities\\koicategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|solutionrelative:koibet\\entities\\koicategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|c:\\users\\admin\\desktop\\gitthub\\koibet-be-main\\koibet\\entities\\koistandard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|solutionrelative:koibet\\entities\\koistandard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|c:\\users\\admin\\desktop\\gitthub\\koibet-be-main\\koibet\\entities\\transactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|solutionrelative:koibet\\entities\\transactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|c:\\users\\admin\\desktop\\gitthub\\koibet-be-main\\koibet\\entities\\referee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|solutionrelative:koibet\\entities\\referee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|c:\\users\\admin\\desktop\\gitthub\\koibet-be-main\\koibet\\entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|solutionrelative:koibet\\entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|c:\\users\\admin\\desktop\\gitthub\\koibet-be-main\\koibet\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|solutionrelative:koibet\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|c:\\users\\admin\\desktop\\gitthub\\koibet-be-main\\koibet\\entities\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|solutionrelative:koibet\\entities\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|c:\\users\\admin\\desktop\\gitthub\\koibet-be-main\\koibet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|solutionrelative:koibet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|c:\\users\\admin\\desktop\\gitthub\\koibet-be-main\\koibet\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|solutionrelative:koibet\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|c:\\users\\admin\\desktop\\gitthub\\koibet-be-main\\koibet\\entites\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|solutionrelative:koibet\\entites\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|c:\\users\\admin\\desktop\\gitthub\\koibet-be-main\\koibet\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|solutionrelative:koibet\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|c:\\users\\admin\\desktop\\gitthub\\koibet-be-main\\koibet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|solutionrelative:koibet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|c:\\users\\admin\\desktop\\gitthub\\koibet-be-main\\koibet\\koibet.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{AA86BCBC-60EB-4104-87C3-1AFE091A170D}|KoiBet\\KoiBet.csproj|solutionrelative:koibet\\koibet.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,43 +62,78 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\appsettings.json",
-              "RelativeDocumentMoniker": "KoiBet\\appsettings.json",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\appsettings.json",
-              "RelativeToolTip": "KoiBet\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-01T04:01:44.019Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginDTO.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\DTO\\LoginDTO.cs",
-              "RelativeDocumentMoniker": "KoiBet\\DTO\\LoginDTO.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\DTO\\LoginDTO.cs",
-              "RelativeToolTip": "KoiBet\\DTO\\LoginDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "KoiCategory.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\Entities\\KoiCategory.cs",
+              "RelativeDocumentMoniker": "KoiBet\\Entities\\KoiCategory.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\Entities\\KoiCategory.cs",
+              "RelativeToolTip": "KoiBet\\Entities\\KoiCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T03:36:24.871Z",
+              "WhenOpened": "2024-10-03T01:24:04.815Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "KoiStandard.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\Entities\\KoiStandard.cs",
+              "RelativeDocumentMoniker": "KoiBet\\Entities\\KoiStandard.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\Entities\\KoiStandard.cs",
+              "RelativeToolTip": "KoiBet\\Entities\\KoiStandard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T01:10:37.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Referee.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\Entities\\Referee.cs",
+              "RelativeDocumentMoniker": "KoiBet\\Entities\\Referee.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\Entities\\Referee.cs",
+              "RelativeToolTip": "KoiBet\\Entities\\Referee.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA1wBQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T01:07:03.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\appsettings.json",
+              "RelativeDocumentMoniker": "KoiBet\\appsettings.json",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\appsettings.json",
+              "RelativeToolTip": "KoiBet\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-01T04:01:44.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\DTO\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "KoiBet\\DTO\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\DTO\\LoginDTO.cs",
+              "RelativeToolTip": "KoiBet\\DTO\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T03:36:24.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "KoiBet\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\Controllers\\AuthController.cs",
               "RelativeToolTip": "KoiBet\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAYwAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-01T03:36:36.686Z",
               "EditorCaption": ""
@@ -79,40 +142,85 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Users.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\Entites\\Users.cs",
-              "RelativeDocumentMoniker": "KoiBet\\Entites\\Users.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\Entites\\Users.cs",
-              "RelativeToolTip": "KoiBet\\Entites\\Users.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\Entities\\Users.cs",
+              "RelativeDocumentMoniker": "KoiBet\\Entities\\Users.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\Entities\\Users.cs",
+              "RelativeToolTip": "KoiBet\\Entities\\Users.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAADwvwQAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T03:36:30.14Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T03:36:30.14Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
+              "Title": "Roles.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\Entities\\Roles.cs",
+              "RelativeDocumentMoniker": "KoiBet\\Entities\\Roles.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\Entities\\Roles.cs",
+              "RelativeToolTip": "KoiBet\\Entities\\Roles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T09:46:28.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "RegisterDTO.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\DTO\\RegisterDTO.cs",
               "RelativeDocumentMoniker": "KoiBet\\DTO\\RegisterDTO.cs",
               "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\DTO\\RegisterDTO.cs",
               "RelativeToolTip": "KoiBet\\DTO\\RegisterDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T03:36:25.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T03:36:25.461Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\Program.cs",
               "RelativeDocumentMoniker": "KoiBet\\Program.cs",
               "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\Program.cs",
               "RelativeToolTip": "KoiBet\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T03:35:12.164Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T03:35:12.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Transactions.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\Entities\\Transactions.cs",
+              "RelativeDocumentMoniker": "KoiBet\\Entities\\Transactions.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\Entities\\Transactions.cs",
+              "RelativeToolTip": "KoiBet\\Entities\\Transactions.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T09:46:29.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "KoiBet.http",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\KoiBet.http",
+              "RelativeDocumentMoniker": "KoiBet\\KoiBet.http",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\KoiBet.http",
+              "RelativeToolTip": "KoiBet\\KoiBet.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-10-01T09:44:15.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "KoiBet\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Gitthub\\KoiBet-BE-Main\\KoiBet\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "KoiBet\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T09:46:26.109Z"
             }
           ]
         }

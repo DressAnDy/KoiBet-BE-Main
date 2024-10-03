@@ -1,5 +1,4 @@
-﻿using KoiBet.Entites;
-using KoiBet.Entities;
+﻿using KoiBet.Entities;  
 using Microsoft.EntityFrameworkCore;
 
 namespace KoiBet.Data

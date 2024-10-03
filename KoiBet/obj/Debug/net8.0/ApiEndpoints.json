@@ -30,15 +30,5 @@
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "KoiBet.Controllers.AuthController",
-    "Method": "Test",
-    "RelativePath": "api/Auth/test",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
   }
 ]

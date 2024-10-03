@@ -1,16 +1,21 @@
-﻿namespace KoiBet.DTO
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace KoiBet.DTO
 {
     public class RegisterDTO
     {
+        [Required(ErrorMessage = "Username is required.")]
         public string Username { get; set; }
-        public string Password { get; set; }
-        public string Email { get; set; }
-        public string Phone { get; set; }
 
+        [Required(ErrorMessage = "Password is required.")]
+        [DataType(DataType.Password)]
+        public string Password { get; set; }
+
+        //[Required(ErrorMessage = "Full name is required.")]
+        //public string full_name { get; set; }
+
+        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string confirmPassword { get; set; }
-        
-        //Nếu muốn dùng biến thì dùng 
-        //public string Fullname { get; set; }
 
     }
 }

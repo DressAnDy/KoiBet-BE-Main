@@ -1,7 +1,7 @@
 ﻿using KoiBet.Entities;
 using System.ComponentModel.DataAnnotations;
 
-namespace KoiBet.Entites
+namespace KoiBet.Entities
 {
     public class Roles
     {

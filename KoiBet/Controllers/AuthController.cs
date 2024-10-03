@@ -1,10 +1,9 @@
 ﻿using KoiBet.Data;
 using KoiBet.DTO;
 using KoiBet.Entities;
-using KoiBet.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.IdentityModel.Tokens.Jwt;
+using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 
 namespace KoiBet.Controllers
@@ -13,139 +12,93 @@ namespace KoiBet.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        private readonly ApplicationDbContext _context; // Khai báo ApplicationDbContext
-        private readonly IAuthService _authService; // Thêm dịch vụ xác thực
+        private readonly ApplicationDbContext _context;
 
-        // Constructor
-        public AuthController(ApplicationDbContext context, IAuthService authService)
+        public AuthController(ApplicationDbContext context)
         {
             _context = context;
-            _authService = authService;
         }
 
         // POST: auth/login
         [AllowAnonymous]
-        [HttpPost("login")] // Thêm đường dẫn cho rõ ràng
+        [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginDTO loginDTO)
         {
-            // Kiểm tra username và password
+            // Kiểm tra username có hợp lệ không
             if (string.IsNullOrEmpty(loginDTO.Username))
             {
-                return BadRequest(new { message = "Username needs to be fill" });
+                return BadRequest(new { message = "Username needs to be filled" });
             }
-            else if (string.IsNullOrEmpty(loginDTO.Password))
+
+            // Kiểm tra password có hợp lệ không
+            if (string.IsNullOrEmpty(loginDTO.Password))
             {
                 return BadRequest(new { message = "Password needs to be entered" });
             }
 
-            // Thực hiện đăng nhập
-            Users loggedInUser = await _authService.Login(loginDTO.Username, loginDTO.Password);
+            // Tìm người dùng trong cơ sở dữ liệu
+            var user = await _context.Users
+                .FirstOrDefaultAsync(u => u.Username == loginDTO.Username);
 
-            if (loggedInUser != null)
+            // Kiểm tra người dùng có tồn tại không
+            if (user == null)
             {
-                return Ok(loggedInUser); // Trả về thông tin người dùng đã đăng nhập
+                return BadRequest(new { message = "User not found" });
             }
 
-            return BadRequest(new { message = "User login unsuccessful" });
+            // Kiểm tra password có hợp lệ không
+            if (string.IsNullOrEmpty(user.Password) || !BCrypt.Net.BCrypt.Verify(loginDTO.Password, user.Password))
+            {
+                return BadRequest(new { message = "Invalid password" });
+            }
+
+            // Nếu tất cả đều hợp lệ, tạo phản hồi cho người dùng
+            var userResponse = new
+            {
+                user.user_id,
+                user.Username,
+                user.role_id
+            };
+
+            return Ok(userResponse);
         }
 
-        ////Login by Email
-        //[HttpPost("loginByEmail")]
-        //public async Task<IActionResult> LoginByEmail([FromBody] LoginDTO loginDTO)
-        //{
-        //    if (string.IsNullOrEmpty(loginDTO.Email))
-        //    {
-        //        return BadRequest(new {message = "Email need to be fill"});
-        //    }
-        //    else if (string.IsNullOrEmpty(loginDTO.Password))
-        //    {
-        //        return BadRequest(new { message = "Password need to be fill" }); //can be change to UI 
-        //    }
-           
-        //    Users loggedInEmail = await _authService.Login(loginDTO.Email, loginDTO.Password);
+    // POST: auth/register
+    [AllowAnonymous]
+    [HttpPost("register")]
+    public async Task<IActionResult> Register([FromBody] RegisterDTO registerDTO)
+    {
+        var lastUser = await _context.Users.OrderByDescending(u => u.user_id).FirstOrDefaultAsync();
+        var newUserId = lastUser == null ? "U1" : "U" + (int.Parse(lastUser.user_id.Substring(1)) + 1).ToString();
 
-        //    if (loggedInEmail != null) 
-        //    {
-        //        return Ok(loggedInEmail);
-        //    }
-
-        //    return BadRequest(new {message = "Account not exsit"})
-        //} //Cần dùng thì bung ra xài
-
-
-        // POST: auth/register
-        [AllowAnonymous]
-        [HttpPost("register")] // Thêm đường dẫn cho rõ ràng
-        public async Task<IActionResult> Register([FromBody] RegisterDTO registerDTO) // Sửa tên biến cho đúng
+        // Check if the role exists
+        var roleExists = await _context.Roles.AnyAsync(r => r.role_id == "R1");
+        if (!roleExists)
         {
-            if (string.IsNullOrEmpty(registerDTO.Username))
+            // Insert the default role if it does not exist
+            var defaultRole = new Roles
             {
-                return BadRequest(new { message = "Username needs to be entered" });
-            }
-            else if (string.IsNullOrEmpty(registerDTO.Password))
-            {
-                return BadRequest(new { message = "Password needs to be entered" });
-            }
-            else if (string.IsNullOrEmpty(registerDTO.Email))
-            {
-                return BadRequest(new { message = "Email needs to be entered" });
-            }
-            else if(registerDTO.Password != registerDTO.confirmPassword)
-            {
-                return BadRequest(new { message = "Password not match" });
-            }
-
-            var userToRegister = new Users(registerDTO.Username, registerDTO.Password, registerDTO.Email);
-            var registeredUser = await _authService.Register(userToRegister);
-
-            if (registeredUser != null)
-            {
-                // Đăng nhập ngay sau khi đăng ký
-                return Ok(registeredUser);
-            }
-
-            return BadRequest(new { message = "User registration unsuccessful" });
+                role_id = "R1",
+                role_name = "customer" // Set the role name is customer
+            };
+            _context.Roles.Add(defaultRole);
+            await _context.SaveChangesAsync();
         }
 
-        //// GET: auth/test
-        //[Authorize(Roles = "Everyone")]
-        //[HttpGet("test")] // Thêm đường dẫn cho rõ ràng
-        //public IActionResult Test()
-        //{
-        //    string token = Request.Headers["Authorization"];
+        var newUser = new Users
+        {
+            user_id = newUserId,
+            Username = registerDTO.Username,
+            Password = BCrypt.Net.BCrypt.HashPassword(registerDTO.Password),
+            role_id = "R1" // Set default role_id to R1
+        };
 
-        //    if (token.StartsWith("Bearer"))
-        //    {
-        //        token = token.Substring("Bearer ".Length).Trim();
-        //    }
+        // Add user to the database
+        _context.Users.Add(newUser);
+        await _context.SaveChangesAsync();
 
-        //    var handler = new JwtSecurityTokenHandler();
-        //    JwtSecurityToken jwt = handler.ReadJwtToken(token);
-
-        //    var claims = new Dictionary<string, string>();
-
-        //    foreach (var claim in jwt.Claims)
-        //    {
-        //        claims.Add(claim.Type, claim.Value);
-        //    }
-
-        //    return Ok(claims); // Trả về các claims trong token
-        //} --------------> Use to test 
-
-
-
-        //// Phương thức đăng nhập bằng Google (chưa hoàn thiện)
-        //[AllowAnonymous]
-        //[HttpPost("login-google")] // Thêm đường dẫn cho rõ ràng
-        //public async Task<IActionResult> LoginByGoogle([FromBody] GoogleLoginModel model)
-        //{
-        //    // Logic để xác thực người dùng qua Google
-        //    // Chưa hoàn thiện, cần định nghĩa GoogleLoginModel và logic xác thực
-        //}
-    
-        
-    
-    
-    
+        return Ok(newUser);
+        }
     }
+
 }
